@@ -1,6 +1,6 @@
 /*********************************************************
  * Lab4.c
- *********************************************************
+ *********************************************************/
 #include <p32xxxx.h>
 #include <plib.h>
 /* Global variables */
@@ -11,7 +11,7 @@ unsigned int acc = 500; //acc determines the acceleration rate
 #pragma interrupt CN_ISR ipl7 vector 26
 void T2_ISR (void)
 {
-  IFS0CLR = 0x00000100;
+	IFS0CLR = 0x00000100;
 }
 void CN_ISR (void) {
 	static int pwm = 0; //variable duty cycle
@@ -25,9 +25,8 @@ void CN_ISR (void) {
 	OC1RS = pwm; //update duty cycle register
 
 	int n = 0;
-	while (n < 1000) {
+	while (n < 1000)
 		n++;
-	}
 
 	IFS1bits.CNIF = 0;
 	IEC1bits.CNIE = 1;
