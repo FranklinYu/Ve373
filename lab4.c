@@ -1,7 +1,7 @@
 /*********************************************************
  * Lab4.c
  *********************************************************
- #include <p32xxxx.h>
+#include <p32xxxx.h>
 #include <plib.h>
 /* Global variables */
 unsigned int readD;
