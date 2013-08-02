@@ -6,12 +6,12 @@
 
 int main ()
 {
-    initialTimer ();
-    initialPWM ();
-    initialSpeaker ()
-    startAll ();
-    while (1);
-    return 0;
+	initialTimer ();
+	initialPWM ();
+	initialSpeaker ()
+	startAll ();
+	while (1);
+	return 0;
 }
 
 
@@ -28,7 +28,7 @@ unsigned char key_F, key_E;
 
 void key_init()
 {
-    asm("di");
+	asm("di");
 	TRISGSET = 0x3C0;
 	CNCONbits.ON = 1;
 	CNENSET = 0xF00;
