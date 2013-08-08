@@ -41,4 +41,3 @@ void GenUsec();
 void DelayUsec(uchar num);
 void DelayMsec(uchar num);
 void CNConfig(); // to initialize the keyboard
-int get_num(int row, int column); // returns value on keyboard
